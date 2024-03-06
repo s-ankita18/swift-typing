@@ -12,6 +12,7 @@ function getRandomQuote() {
 async function renderNewQuote() {
     const quote = await getRandomQuote();
     quoteDisplayElement.innerText = quote;
+     quoteInput.value = '';
 }
 // when we click start button playGame is called
 const playGame = () =>{
